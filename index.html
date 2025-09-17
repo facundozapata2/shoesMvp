@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/logo/header_logo_1.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/72fb91e857.js" crossorigin="anonymous"></script>
+    <title>Dulce Beauty</title>
+</head>
+<body>
+ 
+<div class="wrapper">
+
+    <header class="main-header" id="mainHeader">
+        <div class="brand">
+            <img src="./assets/images/logo/header_logo_1.webp" alt="Logo" loading="lazy">
+            <h1>Dulce Beauty</h1>
+        </div>
+        <div class="cart">
+            <button id="shoppingCartBtn" class="shopping__cart-btn">
+                <div class="cart-info">
+                  <span class="cart-total">$0</span>
+                  <span class="cart-amount">0</span>
+                </div>
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+        </div>
+        <div class="header_social-media">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Facebook"><i class="fa-brands fa-whatsapp"></i></a>
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+
+        </div>
+    </header>
+
+    <section class="full-vw-bgImg">
+        <div class="full-vw-bgImg__content">
+            <!-- <h2>Perfumes</h2> -->
+            <!-- <p>Encuentra el perfume ideal para ti</p> -->
+        </div>
+        <!-- bg img must be on main div bg with css -->
+    </section>
+
+    <section class="search-bar" id="searchBar">
+        <form action="#" method="get">
+            <input type="text" name="search" id="search" placeholder="Buscar...">
+            <button type="submit" title="Buscar" id="searchBtn"><i class="fas fa-search"></i></button>
+        </form>
+    </section>
+
+    <main class="main-productos" id="mainProductos">
+        <div class="product-header">
+            <h3>PRODUCTOS</h3>
+        </div>
+        <ul class="product-list" id="productList">
+            <li class="productlist__item active" data-category="all">
+                <a href="#" data-toggle="tab">TODOS</a>
+            </li>
+            <li class="productlist__item" data-category="jabon">
+                <a href="#" data-toggle="tab">JABON BATIDO CREMOSO CORPORAL</a>
+            </li>
+            <li class="productlist__item" data-category="exfoliante">
+                <a href="#" data-toggle="tab">EXFOLIANTES CREMOSOS CORPORALES</a>
+            </li>
+            <li class="productlist__item" data-category="bodyLotion">
+                <a href="#" data-toggle="tab">BODY LOTION</a>
+            </li>
+            <li class="productlist__item" data-category="manteca">
+                <a href="#" data-toggle="tab">MANTECAS CORPORALES</a>
+            </li>
+        </ul>
+        <!-- dinamic section -->
+        <section class="product-item__container" id="productItemContainer">
+
+            <!-- <div class="product-item__card" id="productItemCard" data-category="Exfoliante">
+                <img src="./assets/images/jpg/productItem01_1.webp" alt="Producto">
+                <div class="product-item__info">
+                    <h4>EXFO CREMOSO CON AROME Y COLOR 200CC</h4>
+                    <p>Exfoliante de limpieza profunda corporal en textura cremosa.Ideal para prevenir la foliculitis.Al contener aceites deja la piel de seda. Se puede usar las veces que veas</p>
+                    <div class="product-item__price-btn">
+                        <p class="product-item__price">$ 500</p>
+                        <div class="product-item__btn-container">
+                            <button type="button" name="quitarDelCarrito" title="Quitar del carrito" class="product-item__btn-remove" onclick="quitarDelCarrito()">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <button type="button" name="cantidadEnCarrito" title="Cantida en el Carrito" class="product-item__btn-amount">0</button>
+                            <button type="button" name="agregarAlCarrito" title="Agregar al carrito" class="product-item__btn-add" onclick="agregarAlCarrito()">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>     -->
+        </section>
+    </main>
+
+    <article class="shopping-card__sidebar cart-hidden">
+        <div class="product-in-cart__card-container">
+            <!-- productCartItem component -->
+        </div>
+        <form id="orderForm" class="product-in-cart__form cart-form__hidden">
+            <input type="text" name="userName" id="userName" placeholder="Nombre" required>
+            <input type="number" name="userPhone" id="userPhone" placeholder="Celular" required>
+            <select name="paymentMethod" id="paymentMethod" title="Metodo de pago" required>
+                    <option value="">Metodo de pago</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="mercadoPago">Mercado Pago</option>
+                    <option value="billeteraVirtual">Billetera Virtual</option>
+                    <option value="rapipago">Rapipago</option>
+                    <option value="pagofacil">Pago Fácil</option>
+                    <option value="transferencia">Transferencia bancaria</option>
+                    <option value="tarjetaCredito">Tarjeta de crédito</option>
+                    <option value="tarjetaDebido">Tarjeta de debito</option>
+            </select>
+            <select name="retiroMethod" id="retiroMethod" title="Metodo de retiro" required>
+                <option value="">Envío/Retiro</option>
+                <option value="retiroEnPersona">Retiro en persona</option>
+                <option value="enviar">Quiero que me lo envíen</option>
+            </select>
+            <input type="text" name="direccion" id="direccion" placeholder="Dirección">
+            <select name="zonaDeEntrega" id="zonaDeEntrega" title="Zona de entrega">
+                <option value="">Zona de entrega</option>
+                <option value="0">No sale mi zona</option>
+                <option value="2000" name="claypole">Claypole $2000</option>
+                <option value="1500" name="avellaneda">Avellaneda $1500</option>
+                <option value="1500" name="lanus">Lanús $1500</option>
+                <option value="1800" name="quilmes">Quilmes $1800</option>
+                <option value="1700" name="lomasDeZamora">Lomas de Zamora $1700</option>
+                <option value="1600" name="sanMartin">San Martín $1600</option>
+                <option value="1600" name="moron">Morón $1600</option>
+                <option value="2000" name="tigre">Tigre $2000</option>
+                <option value="1900" name="sanIsidro">San Isidro $1900</option>
+                <option value="1800" name="vicenteLopez">Vicente López $1800</option>
+            </select>
+            <textarea name="nota" id="notaTextarea" placeholder="¿Algún comentario?"></textarea>
+        </form>
+        <div class="product-in-cart__info cart-info__hidden">
+            <p>Item(s): <span id="productInCartTotalItems" class="cart-amount position-static">0</span></p>
+            <p aria-label="Costo sin envio">Total: <span id="productInCartSubNetworth" class="cart-total" title="Costo de productos">$1000</span></p>
+            <p aria-label="Costo de envio">Costo de envio: <span id="productInCartShippingCost" title="Costo de envio">$1000</span></p>
+            <p aria-label="Costo Neto">Costo final: <span id="productInCartNetworth" title="Costo total"></span></p>
+            <button type="submit" form="orderForm" name="procesarPedido" title="enviar pedido" class="product-in-cart__btn-procesar" aria-label="Enviar pedido">Enviar Pedido <i class="fa-brands fa-square-whatsapp"></i></button>
+        </div>
+    </article>
+
+    <div class="opening-hours">
+        <img src="./assets/images/svg/clock-svgrepo-com.svg" alt="Horario de atención">
+        <div class="opening-hours__content">
+            <h3>Horarios de atención</h3>
+            <p>Lunes a Viernes de 9:00hs a 18:00hs</p>
+            <p>Sábados de 9:00hs a 13:00hs</p>
+        </div>
+    </div>
+
+    <section class="about-us">
+        <h4 class="about-us__bold-txt">Nosotros</h4>
+        <span>Descubre la Belleza que Mereces con  Palais Rose Cosmetica. </span>
+        <p> Bienvenidos a  Palais Rose Cosmetica, tu destino para el cuidado de la piel. Somos una marca comprometida con la belleza, la sostenibilidad y la satisfacción de nuestros clientes.</p>
+        <span class="about-us__bold-txt">Nuestros valores:</span>
+        <p><span class="about-us__bold-txt">Cruelty-Free:</span> Nos enorgullece ser una marca libre de crueldad animal, porque creemos que la belleza no debe ser a expensas de otros seres vivos.</p>
+        <span>> Nuestros productos son veganos, apto niños, apto piel de celiacos y diabeticos •</span>
+        <p><span class="about-us__bold-txt">Hipoalergénicas:</span> Nuestros productos están formulados con ingredientes suaves y seguros, ideales para pieles sensibles.</p>
+        <p><span class="about-us__bold-txt">Somos Fabricantes:</span> Contamos con productos de alta calidad que son fabricados por nosotros mismos, lo que garantiza estándares superiores en cada producto.</p>
+        <div>
+            <p class="about-us__bold-txt">¡Ventas Mayoristas y Minoristas!</p>
+            <p><span class="about-us__bold-txt">Te recomendamos</span> probar nuestro producto estrella</p>
+            <p class="about-us__bold-txt">Mante body butter</p>
+            <p>La manteca es de uso diario. Deja arome por horas y un brillo sutil.</p>
+        </div>
+        <p><span class="about-us__bold-txt">Ofertas Especiales:</span> No te pierdas nuestras ofertas especiales de la semana. ¡Estate atento a nuestras publicaciones para obtener descuentos exclusivos!</p>
+        <p><span class="about-us__bold-txt">Síguenos en Redes Sociales: </span>Asegúrate de seguirnos en Instagram para mantenerte al día con las últimas tendencias en cuidado de la piel, consejos de belleza y promociones exclusivas. </p>
+        <p>Utiliza el carrito de compras. Nuestro equipo de atención al cliente estará encantado de ayudarte.</p>
+        <p>Gracias por ser parte de la comunidad de <span class="about-us__bold-txt">Palais Rose Cosmetica</span>. Juntos, vamos a descubrir la belleza que realmente mereces.</p>
+    </section>
+
+    <section class="services">
+        <div class="services-card">
+            <i class="fa-regular fa-handshake"></i>
+            <span>RETIRO EN PERSONA</span>
+            <p>PODES HACERLO EN CUALQUIERA DE LAS DOS DIRECCIONES</p>
+        </div>
+        <div class="services-card">
+            <i class="fa-solid fa-map-pin"></i>
+            <span>DONDE NOS ENCONTRAS</span>
+            <p>ESTAMOS EN FLORES, CAPITAL FEDERAL - ARGENTINA</p>
+        </div>
+        <div class="services-card">
+            <i class="fa-regular fa-credit-card"></i>
+            <span>METODOS DE PAGO</span>
+            <p>EFECTIVO, TRANSFERENCIA, TARJETAS DE CREDITO/DEBITO</p>
+        </div>
+        <div class="services-card">
+            <i class="fa-solid fa-car"></i>
+            <span>ENVIOS</span>
+            <p>MOTO Y CORREO ARGENTINO</p>
+        </div>
+    </section>
+
+    <footer class="main-footer" id="mainFooter">
+        <div class="footer-brand">
+            <img src="./assets/images/logo/header_logo_1.webp" alt="Logo" loading="lazy">
+            <h2>BEAUTY COMESTICOS</h2>
+        </div>
+        <div class="footer__info">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Flores, Capital Federal. <br>
+                Buenos Aires - Argentina
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>+54 9 11 3123-2337</p>
+            </div>
+        </div>
+        <div class="footer__social-media">
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" title="X"><i class="fab fa-twitter"></i></a>
+        </div>
+        <!-- <div class="developer">
+            <span>¿Buscas tener sitio web?🤔</span>
+            <span>Hablame por <a href="https://wa.me/5491151222667" rel="noopener" target="_blank" title="Whatsapp desarrolador web"><i class="fa-brands fa-whatsapp"></i></a></span>
+        </div> -->
+    </footer>
+
+</div>
+
+<!-- scripts -->
+<script type="module" src="./assets/js/main.js"></script>
+<script type="module" src="./assets/js/cartManager.js"></script>
+<script type="module" src="./assets/js/productFilter.js"></script>
+<script type="module" src="./assets/js/components/ProductCardMain.js"></script>
+<script type="module" src="./assets/js/components/ProductCartCard.js"></script>
+<script type="module" src="./assets/js/components/EmptyCartMessage.js"></script>
+<script type="module" src="./assets/js/toggleCart.js"></script>
+<script type="module" src="./assets/js/shoppingCartSidebar.js"></script>
+<script type="module" src="./assets/js/orderFormManager.js"></script>
+
+</body>
+</html>

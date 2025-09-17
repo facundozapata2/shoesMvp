@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "container-type",
+          "container-type: inline-size",
+          "container-name",
+          "@container"
+        ]
+      }
+    ]
+  }
+}
