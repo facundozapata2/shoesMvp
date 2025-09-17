@@ -116,6 +116,6 @@ export class CartManager {
   // Obtener copia segura del carrito
   getCarrito() {
     return structuredClone(this.carrito);
-  }w
+  }
 }
 

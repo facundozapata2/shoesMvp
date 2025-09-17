@@ -3,8 +3,6 @@ import { ProductFilter } from './productFilter.js';
 import { ShoppingCartSidebar } from './shoppingCartSidebar.js';
 import { OrderForm } from './orderFormManager.js';
 import { toggleCart } from './toggleCart.js';
-// import { EmptyCartMessage } from './components/EmptyCartMessage.js';
-// import { ProductCartItem } from './components/ProductCartCard.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
