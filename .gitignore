@@ -1,0 +1,7 @@
+.vscode/
+desktop.ini
+*.zip
+*.tar
+*.gz
+*.log
+.hintrc
