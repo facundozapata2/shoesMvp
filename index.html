@@ -99,7 +99,7 @@
         <div class="product-in-cart__card-container">
             <!-- productCartItem component -->
         </div>
-        <form id="orderForm" class="product-in-cart__form cart-form__hidden">
+        <form id="orderForm" action="https://formsubmit.co/youremail@example.com" method="POST" class="product-in-cart__form cart-form__hidden">
             <input type="text" name="userName" id="userName" placeholder="Nombre" required>
             <input type="number" name="userPhone" id="userPhone" placeholder="Celular" required>
             <select name="paymentMethod" id="paymentMethod" title="Metodo de pago" required>
@@ -141,6 +141,7 @@
             <p aria-label="Costo de envio">Costo de envio: <span id="productInCartShippingCost" title="Costo de envio">$1000</span></p>
             <p aria-label="Costo Neto">Costo final: <span id="productInCartNetworth" title="Costo total"></span></p>
             <button type="submit" form="orderForm" name="procesarPedido" title="enviar pedido" class="product-in-cart__btn-procesar" aria-label="Enviar pedido">Enviar Pedido <i class="fa-brands fa-square-whatsapp"></i></button>
+            <button type="submit" form="orderForm" name="procesarPedido" title="enviar pedido" class="product-in-cart__btn-procesar" aria-label="Enviar pedido">Enviar Pedido <i class="fa-solid fa-envelope" style="color: #ddd;"></i></button>
         </div>
     </article>
 
@@ -238,7 +239,7 @@
 <script type="module" src="./assets/js/toggleCart.js"></script>
 <script type="module" src="./assets/js/shoppingCartSidebar.js"></script>
 <script type="module" src="./assets/js/orderFormManager.js"></script>
-<!-- doc ia made for reference only
+<!-- doc: ia made for reference only
  https://deepwiki.com/facundozapata2/dulceBeauty
 -->
 </body>

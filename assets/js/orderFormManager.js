@@ -34,9 +34,9 @@ export class OrderForm {
     zona.addEventListener('change', (e) => {
       const selectedOption = zona.options[zona.selectedIndex];
       const costoEnvioValue = selectedOption.value;
-      
+      const warning = this.form.querySelector('.zona-warning')
       if (costoEnvioValue === "0") {
-        let warning = this.form.querySelector('.zona-warning');
+        // let warning = this.form.querySelector('.zona-warning');
         if (!warning) {
           warning = document.createElement('p');
           warning.className = 'zona-warning';
@@ -47,7 +47,7 @@ export class OrderForm {
           zona.parentElement.appendChild(warning);
         }
       } else {
-        const warning = this.form.querySelector('.zona-warning');
+        // const warning = this.form.querySelector('.zona-warning');
         if (warning) warning.remove();
       }
       
