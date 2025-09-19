@@ -3,7 +3,10 @@ export class OrderForm {
   constructor(cartManager) {
     this.cartManager = cartManager;
     this.form = document.getElementById('orderForm');
-    this.submitButton = document.querySelector(".product-in-cart__btn-procesar");
+    // this.submitButton = document.querySelector(".product-in-cart__btn-procesar");
+    //botones de envio
+    this.btnWhatsapp = document.querySelector('.enviarPedidoWhatsapp');
+    this.btnMail = document.querySelector('.enviarPedidoMail');
     this.setupEventListeners();
   }
 
@@ -34,9 +37,8 @@ export class OrderForm {
     zona.addEventListener('change', (e) => {
       const selectedOption = zona.options[zona.selectedIndex];
       const costoEnvioValue = selectedOption.value;
-      const warning = this.form.querySelector('.zona-warning')
+      let warning = this.form.querySelector('.zona-warning')
       if (costoEnvioValue === "0") {
-        // let warning = this.form.querySelector('.zona-warning');
         if (!warning) {
           warning = document.createElement('p');
           warning.className = 'zona-warning';
@@ -47,7 +49,6 @@ export class OrderForm {
           zona.parentElement.appendChild(warning);
         }
       } else {
-        // const warning = this.form.querySelector('.zona-warning');
         if (warning) warning.remove();
       }
       
@@ -68,15 +69,41 @@ export class OrderForm {
       notaTextarea.placeholder = "¿Algun comentario?";
     }
 
-    this.submitButton.addEventListener("click", (e) => this.handleSubmit(e));
+    // Click en WhatsApp
+    this.btnWhatsapp.addEventListener("click", (e) => {
+      e.preventDefault();
+      const formData = new FormData(this.form);
+      const mensaje = this.generarMensajePedido(formData);
+      this.enviarPorWhatsApp(mensaje);
+    });
+
+    // Click en Email
+    this.btnMail.addEventListener("click", (e) => {
+      e.preventDefault();
+      const formData = new FormData(this.form);
+      const mensaje = this.generarMensajePedido(formData);
+      this.enviarPorEmail(mensaje);
+    });
+
+    // this.submitButton.addEventListener("click", (e) => this.handleSubmit(e));
+
   }
 
-  handleSubmit(e) {
-    e.preventDefault(); 
-    const formData = new FormData(this.form);
-    const mensaje = this.generarMensajePedido(formData);
-    this.enviarPorWhatsApp(mensaje);
-  }
+  
+
+  // handleSubmit(e) {
+  //   e.preventDefault(); 
+  //   const formData = new FormData(this.form);
+  //   const mensaje = this.generarMensajePedido(formData);
+  //   this.enviarPorWhatsApp(mensaje);
+  // }
+
+  // handleSubmit(e) {
+  //   e.preventDefault();
+  //   const formData = new FormData(this.form);
+  //   const mensaje = this.generarMensajePedido(formData);
+  //   this.enviarPorEmail(mensaje);
+  // }
 
   generarMensajePedido(formData) {
     let mensaje = '🚀 *NUEVO PEDIDO - DULCE BEAUTY* 🚀\n\n';
@@ -102,7 +129,7 @@ export class OrderForm {
       mensaje += `\n*Comentarios:*\n${formData.get('nota')}`;
     }
     
-    return encodeURIComponent(mensaje);
+    return mensaje;
   }
 
   enviarPorWhatsApp(mensaje) {
@@ -110,9 +137,17 @@ export class OrderForm {
     window.open(`https://wa.me/${numeroWhatsApp}?text=${mensaje}`, '_blank');
   }
 
+  // enviarPorEmail(mensaje) {
+  //   const emailDestino = 'facundozapata2@gmail.com';
+  //   const subject = encodeURIComponent('Nuevo Pedido - Dulce Beauty');
+  //   window.open(`mailto:${emailDestino}?subject=${subject}&body=${mensaje}`, '_blank');
+  // }
+
   enviarPorEmail(mensaje) {
-    const emailDestino = 'cliente@example.com';
-    const subject = encodeURIComponent('Nuevo Pedido - Dulce Beauty');
-    window.open(`mailto:${emailDestino}?subject=${subject}&body=${mensaje}`, '_blank');
+  const emailDestino = 'facundozapata2@gmail.com';
+  const subject = encodeURIComponent('Nuevo Pedido - Dulce Beauty');
+  const body = encodeURIComponent(mensaje);
+  window.open(`mailto:${emailDestino}?subject=${subject}&body=${body}`, '_blank');
   }
 }
+
