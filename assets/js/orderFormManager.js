@@ -150,4 +150,3 @@ export class OrderForm {
   window.open(`mailto:${emailDestino}?subject=${subject}&body=${body}`, '_blank');
   }
 }
-
