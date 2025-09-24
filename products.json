@@ -12,7 +12,7 @@
     "id": 2,
     "category": "auriculares",
     "name": "Auricualres Xioami TWS",
-    "price": 14.999,
+    "price": 14999,
     "description": "Auriculares inalámbricos con estuche de carga, prácticos para todo el día.",
     "image": "auricualresXioamiTWS3.52.png",
     "alt": "headphones xiaomi"
@@ -39,7 +39,7 @@
     "id": 5,
     "category": "cargadores",
     "name": "Cargador 20 W + Cable Lightning",
-    "price": 9.999,
+    "price": 9999,
     "description": "Set para carga rápida y transferencia de datos.",
     "image": "cargador20wCableLightning3.22NOBG.png",
     "alt": ""
@@ -48,7 +48,7 @@
     "id": 6,
     "category": "smartwatchs",
     "name": " Smartwatch + Auricular BT",
-    "price": 19.999,
+    "price": 19999,
     "description": "Smartwatch con auricular Bluetooth para uso diario + 7 mallas.",
     "image": "comboRelojAuricularBt13.56NOBG.png",
     "alt": ""
@@ -57,7 +57,7 @@
     "id": 7,
     "category": "parlantes",
     "name": "GO 4 (AAA+)",
-    "price": 23.999,
+    "price": 23999,
     "description": "Parlante JBL GO4 Certificado.",
     "image": "Go4AAA+11.36NOBG.png",
     "alt": ""
@@ -66,7 +66,7 @@
     "id": 8,
     "category": "miscelaneos",
     "name": "TV Box",
-    "price": 32.000,
+    "price": 32000,
     "description": "JBL Go 3 ofrece un sonido natural, con una gran claridad y precisión",
     "image": "tvBox.png",
     "alt": ""
