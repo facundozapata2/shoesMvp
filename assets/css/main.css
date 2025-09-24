@@ -1016,3 +1016,7 @@ input[name="direccion"].visible-delivery {
     font-weight: 500;
     color: var(--color-text);
 }
+
+.fa-envelope i{
+    color: var(--color-text-light);
+}
