@@ -27,7 +27,7 @@ export class ProductCartItem {
           </div>
         </div>
         <div class="img-container-cart">
-          <img src="./assets/images/webp/${this.product.image}" 
+          <img src="./assets/images/webp/products/${this.product.image}" 
                alt="${this.product.alt}" 
                loading="lazy"
                onerror="this.onerror=null;this.src='./assets/images/placeholder.webp'">

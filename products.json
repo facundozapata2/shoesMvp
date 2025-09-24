@@ -1,56 +1,74 @@
 [
   {
     "id": 1,
-    "category": "jabon",
-    "name": "JABON BATIDO PARA CARA Y CUERPO 200CC",
-    "price": 6500,
-    "description": "Exfoliante de limpieza profunda corporal en textura cremosa.Ideal para prevenir la foliculitis.Al contener aceites deja la piel de seda. Se puede usar las veces que veas",
-    "image": "jabonBatido_6500.webp",
-    "alt": "Jabón en envase de vidrio"
+    "category": "auriculares",
+    "name": "AirPods 2da generación",
+    "price": 22000,
+    "description": "Auriculares true wireless con estuche de carga y gran autonomía.",
+    "image": "airdPods2DaGeneracion9.37.png",
+    "alt": "AirPod segunda generacion"
   },
   {
     "id": 2,
-    "category": "exfoliante",
-    "name": "EXFO CREMOSO CON AROMA Y COLOR 200CC",
-    "price": 6500,
-    "description": "Exfoliante de limpieza profunda corporal en textura cremosa.Ideal para prevenir la foliculitis.Al contener aceites deja la piel de seda. Se puede usar las veces",
-    "image": "exfoCremoso_6500.webp",
-    "alt": "Envase de exfoliante cremoso"
+    "category": "auriculares",
+    "name": "Auricualres Xioami TWS",
+    "price": 14.999,
+    "description": "Auriculares inalámbricos con estuche de carga, prácticos para todo el día.",
+    "image": "auricualresXioamiTWS3.52.png",
+    "alt": "headphones xiaomi"
   },
   {
     "id": 3,
-    "category": "exfoliante",
-    "name": "BODY DETOX PARA EL ACNE CORPORAL",
-    "price": 6800,
-    "description": "ESTE EXFOLIANTE ES IDEAL PARA PIELES CON ACNE EN EL CUERPO; YA SEA EN PIERNAS, GLUTEOS, ESPALDA, BRAZOS O DONDE SE NECESITE.CONTIENE CARBON",
-    "image": "exfoDetox_6800.webp",
-    "alt": "Botella de exfoliante cremoso"
+    "category": "auriculares",
+    "name": "Auriculares JBL V7 AAA+",
+    "price": 35000,
+    "description": "Auriculares inalámbricos JBL de tipo casco",
+    "image": "aurisJBLV4aaa+10.42NOBG.png",
+    "alt": ""
   },
   {
     "id": 4,
-    "category": "bodyLotion",
-    "name": "BODY LOTION PARA CUERPO, MASAJES Y MANOS",
-    "price": 6500,
-    "description": "ESTA CREMA DE CUERPO , MASAJES Y  MANOS ES SUPER LIGERA, SEDOSA Y NO GRASA! IDEAL PARA LLEVAR AHORA EN EL VERANO A TODOS LADOS",
-    "image": "bodyLotion_6500.webp",
-    "alt": "Botella body lotion vidrio"
+    "category": "cargadores",
+    "name": "Bateria portatil Iphone",
+    "price": 15000,
+    "description": "Power bank compacto y práctico para recargar donde estés.",
+    "image": "bateriaPortatilphone9.26.png",
+    "alt": ""
   },
   {
     "id": 5,
-    "category": "manteca",
-    "name": "MANTECA RELAX PIERNAS CANSADAS",
-    "price": 7000,
-    "description": "ESTA MANTECA ES IDEAL PARA CUANDO SENTIS CANSANCIO, PESADES Y DOLOR EN LAS PIERNAS. SUS ACEITES Y MANTECAS CONTRIBUYEN A CALMAR Y RELAJAR ESOS DOLORES",
-    "image": "mantecaRelax_7000.webp",
-    "alt": "Botella manteca relax vidrio"
+    "category": "cargadores",
+    "name": "Cargador 20 W + Cable Lightning",
+    "price": 9.999,
+    "description": "Set para carga rápida y transferencia de datos.",
+    "image": "cargador20wCableLightning3.22NOBG.png",
+    "alt": ""
   },
   {
     "id": 6,
-    "category": "manteca",
-    "name": "MANTECA BODY BUTTER VERANO 200CC",
-    "price": 6500,
-    "description": "AL CONTENER GRAN CANTIDAD DE ACEITES Y MANTECAS, ALIADOS PARA LA RESEQUEDAD EN LA PIEL, NUTREN E HIDRATAN EN PROFUNDIDAD. RECOMENDADO PARA PIELES EXTRA SECAS",
-    "image": "mantecaBody_6500.webp",
-    "alt": "Botella body lotion vidrio"
+    "category": "smartwatchs",
+    "name": " Smartwatch + Auricular BT",
+    "price": 19.999,
+    "description": "Smartwatch con auricular Bluetooth para uso diario + 7 mallas.",
+    "image": "comboRelojAuricularBt13.56NOBG.png",
+    "alt": ""
+  },
+  {
+    "id": 7,
+    "category": "parlantes",
+    "name": "GO 4 (AAA+)",
+    "price": 23.999,
+    "description": "Parlante JBL GO4 Certificado.",
+    "image": "Go4AAA+11.36NOBG.png",
+    "alt": ""
+  },
+  {
+    "id": 8,
+    "category": "miscelaneos",
+    "name": "TV Box",
+    "price": 32.000,
+    "description": "JBL Go 3 ofrece un sonido natural, con una gran claridad y precisión",
+    "image": "tvBox.png",
+    "alt": ""
   }
 ]
