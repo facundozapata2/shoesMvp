@@ -13,20 +13,20 @@
     --pink-body-bg:  #f7c6fe;
     --red-hot: #de0100;
     --grey-bg: #555555;
-    --gap-2sm: .25rem;
     --green-light: #24c560;
     --green-hover: rgb(24, 235, 101);
     --oranje-light: #ff9800;
-    --gap-sm: .5rem;
-    --gap-m: .75rem;
-    --gap-l: 1rem;
-    --gap-xl: 1.5rem;
     --gap-2xl: 2rem;
+    --gap-xl: 1.5rem;
+    --gap-l: 1rem;
+    --gap-m: .75rem;
+    --gap-sm: .5rem;
+    --gap-2sm: .25rem;
+    --scale-sm: scale(1.05);
+    --scale-m: scale(1.25);
     --shadow-black: rgba(0, 0, 0, .333);
     --shadow-pink: rgba(232, 62, 140, .333);
     --transition-short: .3s ease-in-out;
-    --scale-sm: scale(1.05);
-    --scale-m: scale(1.25);
 }
 
 *,*::before,*::after{
