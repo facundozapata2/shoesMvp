@@ -26,7 +26,7 @@ h1{
     position: absolute;
     color: var(--black-smoky);
     font-weight: 600;
-    padding: .1rem .4rem;
+    padding: var(--space-xxs) var(--space-sm-xs);
     border-radius: var(--radius-lg);
     font-size: var(--fs-sm);
 }
@@ -74,7 +74,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: var(--space-l);
 }
 
 .search-bar form{
@@ -87,7 +87,7 @@ h1{
 
 .search-bar input{
     width: clamp(200px, 60%, 400px);
-    padding: .5rem;
+    padding: var(--space-sm);
     border-radius: var(--radius-sm);
     border: 1px solid var(--grey);
     transition: box-shadow var(--transition-short);
@@ -128,7 +128,7 @@ h1{
 .productlist__item{
     cursor: pointer;
     width: 100%;
-    padding: .5rem 1rem;
+    padding: var(--space-sm) var(--space-l);
     transition: background var(--transition-short);
 }
 
@@ -149,7 +149,7 @@ h1{
     justify-content: center;
     align-items: center;
     gap: var(--gap-l);
-    padding: 1rem;
+    padding: var(--space-l);
 }
 
 .product-item__info{
@@ -203,15 +203,15 @@ h1{
 }
 
 .product-item__quantity{
-    padding: 0 .35rem;
-    outline: .15rem solid var(--pink-body-bg);
+    padding: var(--space-0) var(--space-xs-sm);
+    outline: .15rem var(--border-solid) var(--pink-body-bg);
 }
 
 .controls-btn{
     transition: all var(--transition-short);
     width: 100%;
     height: 100%;
-    padding: .35rem;
+    padding: var(--space-xs-sm);
 }
 
 .controls-btn:hover,
@@ -244,7 +244,7 @@ h1{
     flex-direction: column;
     gap: var(--gap-sm);
     width: 100%;
-    padding: .5rem;
+    padding: var(--space-sm);
     font-weight: 500;
 }
 
@@ -308,7 +308,7 @@ h1{
 .product-item__subtotal{
     font-weight: 600;
     display: flex;
-    padding: .25rem .5rem;
+    padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-sm);
     gap: var(--gap-2sm);    
     background: var(--grey-bg);
@@ -321,7 +321,7 @@ h1{
 .product-in-cart__form option,
 .product-in-cart__form textarea {
     margin: .25rem 0;
-    padding: .25rem .5rem;
+    padding: var(--space-xs) var(--space-sm);
     border-left: var(--border-base) var(--border-solid) var(--pink-body-bg);
     outline: 2px solid var(--pink-body-bg);
     background: var(--white);
@@ -359,7 +359,7 @@ input[name="direccion"],
   overflow: hidden;
   transition: all var(--transition-short);
   margin: 0;
-  padding: 0;
+  padding: var(--space-0);
   border: var(--border-none);
   outline: var(--border-none);
   -webkit-user-select: none;
@@ -372,7 +372,7 @@ input[name="direccion"].visible-delivery {
     max-height: 28px;
     height: unset;
     visibility: visible ;
-    padding: .25rem .5rem ;
+    padding: var(--space-xs) var(--space-sm);
     border-left: var(--border-base) var(--border-solid) var(--pink-body-bg);
     outline: 2px solid var(--pink-body-bg);
     background: var(--white);
@@ -390,7 +390,7 @@ input[name="direccion"].visible-delivery {
 .product-in-cart__info p{
     background: var(--white);
     border-radius: var(--radius-xs);
-    padding: 0 .225rem;
+    padding: var(--space-0) var(--space-xs);
 }
 
 .product-in-cart__info p span{
@@ -419,7 +419,7 @@ input[name="direccion"].visible-delivery {
 .product-in-cart__info i{
     font-size: var(--fs-xl);
     color: var(--green-light);
-    padding: .5rem;
+    padding: var(--space-sm);
 }
 /* el span que esta dentro del p que muestra la cantidad de productos */
 /* inherit para que herede los mismos estilos que los demas <p>, <span> */
@@ -430,7 +430,7 @@ input[name="direccion"].visible-delivery {
     font-size: inherit;
     /* el padre (<p>) tiene un font weight de 500 por lo que al darle inherit hereda 500 y no 600 como se necesita */
     font-weight: 600;
-    padding: inherit;
+    padding: var(--space-inherit);
     border-radius: var(--radius-inherit);
     width: inherit;
 }
@@ -463,7 +463,7 @@ input[name="direccion"].visible-delivery {
     flex-direction: column;
     height: clamp(100px, 100%, 250px);
     width: clamp(100px, calc(50% - 1rem), calc(225px - 1rem));
-    padding: .5rem;
+    padding: var(--space-sm);
     gap: var(--gap-sm);
 }
 
@@ -487,7 +487,7 @@ input[name="direccion"].visible-delivery {
     font-size: var(--fs-xxl);
     color: var(--white);
     background: var(--pink-body-bg);
-    padding: 1rem;
+    padding: var(--space-l);
     border-radius: var(--radius-full);
 }
 
@@ -527,7 +527,7 @@ input[name="direccion"].visible-delivery {
     gap: var(--gap-2xl);
     width: 100%;
     background: var(--pink-body-bg);
-    padding: .5rem 0;
+    padding: var(--space-sm) var(--space-0);
     border-radius: var(--radius-sm);
 }
 
@@ -536,7 +536,7 @@ input[name="direccion"].visible-delivery {
     font-size: var(--fs-xl);
     color: var(--pink);
     background: var(--white);
-    padding: .5rem;
+    padding: var(--space-sm);
     border-radius: var(--radius-half);
     transition: all var(--transition-short);
 }
@@ -554,7 +554,7 @@ input[name="direccion"].visible-delivery {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 12px 20px;
+    padding: var(--space-m) var(--space-xl);
     border-radius: var(--radius-xs);
     font-size: var(--fs-base);
     z-index: 1000;
@@ -599,7 +599,7 @@ input[name="direccion"].visible-delivery {
   /* Estados de vacío/error */
 .empty-state {
     text-align: center;
-    padding: 4rem 1rem;
+    padding: var(--space-4xl) var(--space-l);
     margin: 2rem auto;
     max-width: 600px;
     border-radius: var(--radius-sm);
