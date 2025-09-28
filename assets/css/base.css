@@ -76,10 +76,19 @@
     --space-2xl: 1.5rem;
     --space-3xl: 2rem;
     --space-4xl: 4rem;
+
+    --margin-0: 0;
+    --margin-auto: auto;
+    --margin-2sm: .25rem;
+    --margin-sm: .5rem;
+    --margin-m: 1rem;
+    --margin-l: 1.25rem;
+    --margin-xl: 1.5rem;
+    --margin-xxl: 2rem;
 }
 
 *,*::before,*::after{
-    margin: 0;
+    margin: var(--margin-0);
     padding: var(--space-0);
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -100,7 +109,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: var(--margin-auto);
     overflow-x: hidden;
 }
 

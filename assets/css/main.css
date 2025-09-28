@@ -98,16 +98,6 @@ h1{
     outline: 1px solid var(--blue);
 }
 
-/* .main-productos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap: var(--gap-l);
-    margin: 1rem 0;
-} */
-
 .product-header h3{
     font-size: var(--fs-xl);
     letter-spacing: .3rem;
@@ -115,15 +105,6 @@ h1{
     align-items: baseline;
     text-align: center;
 }
-
-/* .product-list{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    text-align: center;
-    gap: var(--gap-sm);
-    padding: 0 .5rem;
-} */
 
 .productlist__item{
     cursor: pointer;
@@ -195,7 +176,7 @@ h1{
     justify-content: center;
     align-items: center;
     width: 6rem;
-    margin: auto;
+    margin: var(--margin-auto);
     gap: var(--gap-sm);
     outline: .15rem solid var(--pink-soft);
     border-radius: var(--radius-lg);
@@ -267,7 +248,7 @@ h1{
 
 .product-item-cart__info{
     display: flex;
-    margin-top: 1.25rem;
+    margin-top: var(--margin-l);
 }
 
 .product-item-cart__info-txt{
@@ -320,10 +301,10 @@ h1{
 .product-in-cart__form select,
 .product-in-cart__form option,
 .product-in-cart__form textarea {
-    margin: .25rem 0;
+    margin: var(--margin-2sm) var(--margin-0);
     padding: var(--space-xs) var(--space-sm);
     border-left: var(--border-base) var(--border-solid) var(--pink-body-bg);
-    outline: 2px solid var(--pink-body-bg);
+    outline: var(--border-base) solid var(--pink-body-bg);
     background: var(--white);
     width: calc(100% - .25rem);
     transition: all var(--transition-short);
@@ -358,7 +339,7 @@ input[name="direccion"],
   visibility: hidden;
   overflow: hidden;
   transition: all var(--transition-short);
-  margin: 0;
+  margin: var(--margin-0);
   padding: var(--space-0);
   border: var(--border-none);
   outline: var(--border-none);
@@ -377,7 +358,7 @@ input[name="direccion"].visible-delivery {
     outline: 2px solid var(--pink-body-bg);
     background: var(--white);
     width: calc(100% - .25rem) ;
-    margin: .25rem 0;
+    margin: var(--margin-2sm) var(--margin-0);
 }
 
 #productInCartShippingCost.visible-delivery{
@@ -403,7 +384,7 @@ input[name="direccion"].visible-delivery {
     align-items: center;
     font-weight: 600;
     background: var(--pink);
-    margin: .5rem auto;
+    margin: var(--margin-sm) var(--margin-auto);
     border-radius: var(--radius-sm);
     width: 100%;
     font-size: var(--fs-base);
@@ -600,26 +581,26 @@ input[name="direccion"].visible-delivery {
 .empty-state {
     text-align: center;
     padding: var(--space-4xl) var(--space-l);
-    margin: 2rem auto;
+    margin: var(--margin-xxl) var(--margin-auto);
     max-width: 600px;
     border-radius: var(--radius-sm);
   }
   
   .empty-state__icon {
     font-size: var(--fs-giant);
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin-m);
     opacity: 0.8;
   }
   
   .empty-state__title {
     font-size: var(--fs-xl);
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--margin-sm);
     color: var(--black-smoky)
   }
   
   .empty-state__description {
     color: var(--grey-bg);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--margin-xl);
   }
   
   /* Variantes de estado */
