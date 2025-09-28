@@ -9,7 +9,7 @@
 }
 
 h1{
-    font-size: 1.25rem;
+    font-size: var(--fs-lg);
 }
 
 .shopping__cart-btn{
@@ -28,11 +28,11 @@ h1{
     font-weight: 600;
     padding: .1rem .4rem;
     border-radius: 1rem;
-    font-size: .8rem;
+    font-size: var(--fs-sm);
 }
 
 .cart-total{
-    font-size: 1rem;
+    font-size: var(--fs-base);
     font-weight: 600;
 }
 
@@ -41,7 +41,7 @@ h1{
 }
 
 .cart i{
-    font-size: 1.4rem;
+    font-size: var(--fs-xl);
     transition: transform var(--transition-short);
 }
 
@@ -109,7 +109,7 @@ h1{
 } */
 
 .product-header h3{
-    font-size: 1.5rem;
+    font-size: var(--fs-xl);
     letter-spacing: .3rem;
     display: flex;
     align-items: baseline;
@@ -159,13 +159,13 @@ h1{
 }
 
 .product-item__info h4{
-    font-size: 1rem;
+    font-size: var(--fs-base);
     font-weight: 500;
     letter-spacing: .05rem;
 }
 
 .product-item__info p{
-    font-size: .75rem;
+    font-size: var(--fs-xs);
     font-weight: 500;
     letter-spacing: .05rem;
 }
@@ -187,7 +187,7 @@ h1{
 
 .product-item__price-btn p{
     color: var(--pink);
-    font-size: .95rem;
+    font-size: var(--fs-base);
 }
 
 .product-item__controls{
@@ -262,7 +262,7 @@ h1{
 }
 
 .product-item-cart__card  i{
-    font-size: 1.15rem;
+    font-size: var(--fs-md);
 }
 
 .product-item-cart__info{
@@ -279,7 +279,7 @@ h1{
 }
 
 .product-item__description{
-    font-size: .6rem;
+    font-size: var(--fs-xxs);
 }
 
 .product-item__description {
@@ -406,7 +406,7 @@ input[name="direccion"].visible-delivery {
     margin: .5rem auto;
     border-radius: .5rem;
     width: 100%;
-    font-size: 1rem;
+    font-size: var(--fs-base);
     transition: all var(--transition-short);
 }
 
@@ -417,7 +417,7 @@ input[name="direccion"].visible-delivery {
 }
 
 .product-in-cart__info i{
-    font-size: 1.5rem;
+    font-size: var(--fs-xl);
     color: var(--green-light);
     padding: .5rem;
 }
@@ -469,13 +469,13 @@ input[name="direccion"].visible-delivery {
 
 .services-card span{
     flex: 1;
-    font-size: 1rem;
+    font-size: var(--fs-base);
     font-weight: 500;
 }
 
 .services-card p{
     flex: 2;
-    font-size: .8rem;
+    font-size: var(--fs-sm);
     font-weight: 400;
 }
 
@@ -484,7 +484,7 @@ input[name="direccion"].visible-delivery {
     justify-content: center;
     align-items: center;
     width: 4rem;
-    font-size: 2rem;
+    font-size: var(--fs-xxl);
     color: var(--white);
     background: var(--pink-body-bg);
     padding: 1rem;
@@ -512,7 +512,7 @@ input[name="direccion"].visible-delivery {
 
 .footer__info i{
     color: var(--pink-dark);
-    font-size: 1.25rem;
+    font-size: var(--fs-lg);
 }
 
 .footer__info div{
@@ -533,7 +533,7 @@ input[name="direccion"].visible-delivery {
 
 .footer__social-media i{
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: var(--fs-xl);
     color: var(--pink);
     background: var(--white);
     padding: .5rem;
@@ -556,7 +556,7 @@ input[name="direccion"].visible-delivery {
     right: 20px;
     padding: 12px 20px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: var(--fs-base);
     z-index: 1000;
     opacity: 0;
     animation: feedbackFade 3s ease;
@@ -606,13 +606,13 @@ input[name="direccion"].visible-delivery {
   }
   
   .empty-state__icon {
-    font-size: 3.5rem;
+    font-size: var(--fs-giant);
     margin-bottom: 1rem;
     opacity: 0.8;
   }
   
   .empty-state__title {
-    font-size: 1.5rem;
+    font-size: var(--fs-xl);
     margin-bottom: 0.5rem;
     color: var(--black-smoky)
   }
