@@ -2,6 +2,7 @@
     --white: #eeefff;
     --border-white: #dee2e6;
     --black-smoky: #0d0d0d;
+    --grey: #ccc;
     --blue: #007bff;
     --pink: #e83e8c;
     --pink-light: #FB6AB7;
@@ -39,6 +40,21 @@
     --shadow-lg: 0 0 12px rgba(0,0,0, .2);
     --shadow-pink: -2px 0 10px var(--pink);
     --shadow-black: 0 0 12px rgba(0,0,0, .5);
+    --radius-xs: 0.225rem;
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-full: 100%;
+    --radius-half: 50%;
+    --radius-inherit: inherit;
+    --border-thin: 1px;
+    --border-base: 2px;
+    --border-thick: 3px;
+    --border-none: none;
+    --border-solid: solid;
+    --border-dashed: dashed;
+    --border-dotted: dotted;
+
 }
 
 *,*::before,*::after{
@@ -78,7 +94,7 @@ ul{
 
 button, input, select, option, textarea{
     cursor: pointer;
-    border: none;
+    border: var(--border-none);
     background: transparent;
-    outline: none;
+    outline: var(none);
 }

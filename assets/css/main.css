@@ -24,10 +24,10 @@ h1{
     top: -.5rem;
     right: -.5rem;
     position: absolute;
-    color: #000;
+    color: var(--black-smoky);
     font-weight: 600;
     padding: .1rem .4rem;
-    border-radius: 1rem;
+    border-radius: var(--radius-lg);
     font-size: var(--fs-sm);
 }
 
@@ -88,8 +88,8 @@ h1{
 .search-bar input{
     width: clamp(200px, 60%, 400px);
     padding: .5rem;
-    border-radius: .5rem;
-    border: 1px solid #ccc;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--grey);
     transition: box-shadow var(--transition-short);
 }
 
@@ -175,7 +175,7 @@ h1{
     height: 100%;
     object-fit: cover;
     aspect-ratio: 1/1;
-    border-radius: .5rem;
+    border-radius: var(--radius-sm);
 }
 
 .product-item__price-btn{
@@ -198,7 +198,7 @@ h1{
     margin: auto;
     gap: var(--gap-sm);
     outline: .15rem solid var(--pink-soft);
-    border-radius: 1rem;
+    border-radius: var(--radius-lg);
     overflow: hidden;
 }
 
@@ -238,7 +238,7 @@ h1{
 /* cart card component */
 .product-item-cart__card{
     background: var(--pink-body-bg);
-    border-radius: .5rem;
+    border-radius: var(--radius-sm);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -294,7 +294,7 @@ h1{
 .img-container-cart img{
     width: 4rem;
     height: auto;
-    border-radius: .5rem;
+    border-radius: var(--radius-sm);
     aspect-ratio: 1/2;
     object-fit: cover;
     transition: transform var(--transition-short);
@@ -309,7 +309,7 @@ h1{
     font-weight: 600;
     display: flex;
     padding: .25rem .5rem;
-    border-radius: .5rem;
+    border-radius: var(--radius-sm);
     gap: var(--gap-2sm);    
     background: var(--grey-bg);
     color: var(--white);
@@ -322,7 +322,7 @@ h1{
 .product-in-cart__form textarea {
     margin: .25rem 0;
     padding: .25rem .5rem;
-    border-left: 2px solid var(--pink-body-bg);
+    border-left: var(--border-base) var(--border-solid) var(--pink-body-bg);
     outline: 2px solid var(--pink-body-bg);
     background: var(--white);
     width: calc(100% - .25rem);
@@ -333,8 +333,8 @@ h1{
 .product-in-cart__form select:focus,
 .product-in-cart__form option:focus,
 .product-in-cart__form textarea:focus{
-    outline: 2px solid var(--pink);
-    border-left: 2px solid var(--pink);
+    outline: var(--border-base) var(--border-solid) var(--pink-body-bg);
+    border-left: var(--border-base) var(--border-solid) var(--pink-body-bg);
 }
 
 .product-in-cart__form textarea{
@@ -360,8 +360,8 @@ input[name="direccion"],
   transition: all var(--transition-short);
   margin: 0;
   padding: 0;
-  border: none;
-  outline: none;
+  border: var(--border-none);
+  outline: var(--border-none);
   -webkit-user-select: none;
   user-select: none;
 }
@@ -373,7 +373,7 @@ input[name="direccion"].visible-delivery {
     height: unset;
     visibility: visible ;
     padding: .25rem .5rem ;
-    border-left: 2px solid var(--pink-body-bg) ;
+    border-left: var(--border-base) var(--border-solid) var(--pink-body-bg);
     outline: 2px solid var(--pink-body-bg);
     background: var(--white);
     width: calc(100% - .25rem) ;
@@ -388,8 +388,8 @@ input[name="direccion"].visible-delivery {
 /* fin transiciones dinamicas */
 
 .product-in-cart__info p{
-    background: #ebebeb;
-    border-radius: 0 .225rem;
+    background: var(--white);
+    border-radius: var(--radius-xs);
     padding: 0 .225rem;
 }
 
@@ -404,7 +404,7 @@ input[name="direccion"].visible-delivery {
     font-weight: 600;
     background: var(--pink);
     margin: .5rem auto;
-    border-radius: .5rem;
+    border-radius: var(--radius-sm);
     width: 100%;
     font-size: var(--fs-base);
     transition: all var(--transition-short);
@@ -431,7 +431,7 @@ input[name="direccion"].visible-delivery {
     /* el padre (<p>) tiene un font weight de 500 por lo que al darle inherit hereda 500 y no 600 como se necesita */
     font-weight: 600;
     padding: inherit;
-    border-radius: inherit;
+    border-radius: var(--radius-inherit);
     width: inherit;
 }
 
@@ -488,7 +488,7 @@ input[name="direccion"].visible-delivery {
     color: var(--white);
     background: var(--pink-body-bg);
     padding: 1rem;
-    border-radius: 100%;
+    border-radius: var(--radius-full);
 }
 
 /* footer */
@@ -528,7 +528,7 @@ input[name="direccion"].visible-delivery {
     width: 100%;
     background: var(--pink-body-bg);
     padding: .5rem 0;
-    border-radius: .5rem;
+    border-radius: var(--radius-sm);
 }
 
 .footer__social-media i{
@@ -537,7 +537,7 @@ input[name="direccion"].visible-delivery {
     color: var(--pink);
     background: var(--white);
     padding: .5rem;
-    border-radius: 50%;
+    border-radius: var(--radius-half);
     transition: all var(--transition-short);
 }
 
@@ -555,7 +555,7 @@ input[name="direccion"].visible-delivery {
     bottom: 20px;
     right: 20px;
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: var(--radius-xs);
     font-size: var(--fs-base);
     z-index: 1000;
     opacity: 0;
@@ -602,7 +602,7 @@ input[name="direccion"].visible-delivery {
     padding: 4rem 1rem;
     margin: 2rem auto;
     max-width: 600px;
-    border-radius: 12px;
+    border-radius: var(--radius-sm);
   }
   
   .empty-state__icon {
@@ -629,12 +629,12 @@ input[name="direccion"].visible-delivery {
   
   .empty-state--no-results {
     background: var(--white);
-    border: 2px dashed var(--border-white);
+    border: var(--border-base) var(--border-dashed) var(--border-white);
   }
   
   .empty-state--error {
     background: var(--white);
-    border: 2px solid var(--border-white);
+    border:  var(--border-base) var(--border-dashed) var(--border-white);
     color: var(--red-hot)
   }
   

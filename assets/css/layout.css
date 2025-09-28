@@ -82,7 +82,7 @@
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
-    border-top: 3px solid var(--white);
+    border-top: var(--border-thick) var(--border-solid) var(--border-white);
 }
 @media screen and (min-width: 768px){
     .product-item__container{
@@ -117,7 +117,7 @@
     gap: var(--gap-sm);
     padding: 1rem .5rem;
     background: var(--pink-body-bg);
-    border-radius: .5rem;
+    border-radius: var(--radius-md);
     width: 100%;    
     margin-bottom: .5rem;
     color: var(--grey-bg);
@@ -125,7 +125,7 @@
 }
 
 .shopping-card__sidebar{
-    border-left: 3px solid var(--pink);
+    border-left: var(--border-thick) var(--border-solid) var(--pink);
     padding-left: .5rem;
     overflow-y: auto;
     overflow-x: hidden;
