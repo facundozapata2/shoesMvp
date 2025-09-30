@@ -15,6 +15,16 @@
     --green-hover: rgb(24, 235, 101);
     --oranje-light: #ff9800;
 
+    --letter-spacing-xxs: 0.025rem;
+    --letter-spacing-xs: 0.05rem;
+    --letter-spacing-sm: 0.1rem;
+    --letter-spacing-md: 0.15rem;
+    --letter-spacing-lg: 0.2rem;
+    --letter-spacing-xl: 0.3rem;
+    --letter-spacing-xxl: 0.4rem;
+    --letter-spacing-normal: normal;
+    --letter-spacing-wide: 0.5rem;
+
     --fs-xxs: 0.6rem;
     --fs-xs: 0.75rem;
     --fs-sm: 0.8rem;
@@ -48,8 +58,18 @@
 
     --scale-sm: scale(1.05);
     --scale-m: scale(1.25);
-    
-    --transition-short: .3s ease-in-out;
+
+    --transition-long: .6s;
+    --transition-instant: 0s;
+    --transition-fast: 0.2s ease-in-out;
+    --transition-short: 0.3s ease-in-out;
+    --transition-medium: 0.5s ease-in-out;
+    --transition-long: 0.8s ease-in-out;
+    --transition-slow: 1s ease-in-out;
+    --ease-in: ease-in;
+    --ease-out: ease-out;
+    --ease-in-out: ease-in-out;
+    --ease-linear: linear;
 
     --z-header: 100;
     --z-sidebar: 100;
