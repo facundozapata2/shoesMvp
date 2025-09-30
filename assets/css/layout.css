@@ -107,7 +107,7 @@
     width: 100%;    
     margin-bottom: var(--margin-sm);
     color: var(--grey-bg);
-    font-weight: 500;
+    font-weight: var(--fw-500);
 }
 
 .shopping-card__sidebar{
@@ -139,7 +139,7 @@
     padding: var(--space-3xl) var(--space-0);
     width: 100%;
     color: var(--white);
-    font-weight: 300;
+    font-weight: var(--fw-300);
     font-size: var(--fs-base);
     background: var(--pink-light);
     overflow: hidden;
@@ -152,7 +152,7 @@
     flex-direction: column;
     text-align: center;
     gap: var(--gap-2sm);
-    font-weight: 300;
+    font-weight: var(--fw-300);
     padding: var(--space-l);
 }
 

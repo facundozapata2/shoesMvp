@@ -25,7 +25,7 @@ h1{
     right: -.5rem;
     position: absolute;
     color: var(--black-smoky);
-    font-weight: 600;
+    font-weight: var(--fw-600);
     padding: var(--space-xxs) var(--space-sm-xs);
     border-radius: var(--radius-lg);
     font-size: var(--fs-sm);
@@ -33,7 +33,7 @@ h1{
 
 .cart-total{
     font-size: var(--fs-base);
-    font-weight: 600;
+    font-weight: var(--fw-600);
 }
 
 .cart-info{
@@ -141,13 +141,13 @@ h1{
 
 .product-item__info h4{
     font-size: var(--fs-base);
-    font-weight: 500;
+    font-weight: var(--fw-500);
     letter-spacing: .05rem;
 }
 
 .product-item__info p{
     font-size: var(--fs-xs);
-    font-weight: 500;
+    font-weight: var(--fw-500);
     letter-spacing: .05rem;
 }
 
@@ -226,7 +226,7 @@ h1{
     gap: var(--gap-sm);
     width: 100%;
     padding: var(--space-sm);
-    font-weight: 500;
+    font-weight: var(--fw-500);
 }
 
 .product-item-cart__card button{
@@ -287,7 +287,7 @@ h1{
 }
 
 .product-item__subtotal{
-    font-weight: 600;
+    font-weight: var(--fw-600);
     display: flex;
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-sm);
@@ -382,7 +382,7 @@ input[name="direccion"].visible-delivery {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
+    font-weight: var(--fw-600);
     background: var(--pink);
     margin: var(--margin-sm) var(--margin-auto);
     border-radius: var(--radius-sm);
@@ -410,7 +410,7 @@ input[name="direccion"].visible-delivery {
     background: inherit;
     font-size: inherit;
     /* el padre (<p>) tiene un font weight de 500 por lo que al darle inherit hereda 500 y no 600 como se necesita */
-    font-weight: 600;
+    font-weight: var(--fw-600);
     padding: var(--space-inherit);
     border-radius: var(--radius-inherit);
     width: inherit;
@@ -422,7 +422,7 @@ input[name="direccion"].visible-delivery {
 }
 
 .opening-hours p{
-    font-weight: 400;
+    font-weight: var(--fw-400);
 }
 
 .opening-hours img{
@@ -434,7 +434,7 @@ input[name="direccion"].visible-delivery {
 }
 
 .about-us__bold-txt{
-    font-weight: bold;
+    font-weight: var(--fw-bolder);
 }
 
 .services-card{
@@ -451,13 +451,13 @@ input[name="direccion"].visible-delivery {
 .services-card span{
     flex: 1;
     font-size: var(--fs-base);
-    font-weight: 500;
+    font-weight: var(--fw-500);
 }
 
 .services-card p{
     flex: 2;
     font-size: var(--fs-sm);
-    font-weight: 400;
+    font-weight: var(--fw-400);
 }
 
 .services-card i{
@@ -574,7 +574,7 @@ input[name="direccion"].visible-delivery {
   .product-item__quantity {
     min-width: 24px;
     text-align: center;
-    font-weight: bold;
+    font-weight: var(--fw-bolder);
   }
 
   /* Estados de vacío/error */
@@ -638,5 +638,5 @@ input[name="direccion"].visible-delivery {
     height: clamp(100%, 100dvh, 100vh);
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: var(--fw-500);
 }
