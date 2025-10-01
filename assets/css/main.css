@@ -62,7 +62,7 @@ h1{
 
 .full-vw-bgImg__content{
     width: 100%;
-    height: 100%;
+    height: 20.313rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,8 +152,11 @@ h1{
 }
 
 .product-item__card img{
-    width: 6rem;
+    outline: 1px solid red;
+    width: 100%;
+    max-width: 6rem;
     height: 100%;
+    max-height: 6rem;
     object-fit: cover;
     aspect-ratio: 1/1;
     border-radius: var(--radius-sm);
@@ -167,7 +170,7 @@ h1{
 }
 
 .product-item__price-btn p{
-    color: var(--pink);
+    color: var(--blue);
     font-size: var(--fs-base);
 }
 
@@ -178,14 +181,14 @@ h1{
     width: 6rem;
     margin: var(--margin-auto);
     gap: var(--gap-sm);
-    outline: .15rem solid var(--pink-soft);
+    outline: var(--border-thick) var(--border-solid) var(--blue);
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
 
 .product-item__quantity{
     padding: var(--space-0) var(--space-xs-sm);
-    outline: .15rem var(--border-solid) var(--pink-body-bg);
+    outline: var(--border-thick) var(--border-solid) var(--blue);
 }
 
 .controls-btn{
@@ -196,6 +199,7 @@ h1{
 }
 
 .controls-btn:hover,
+
 .controls-btn:active{
     background: var(--pink-body-bg);
 }
@@ -304,7 +308,7 @@ h1{
     margin: var(--margin-2sm) var(--margin-0);
     padding: var(--space-xs) var(--space-sm);
     border-left: var(--border-base) var(--border-solid) var(--pink-body-bg);
-    outline: var(--border-base) solid var(--pink-body-bg);
+    outline: var(--border-base) var(--border-solid) var(--pink-body-bg);
     background: var(--white);
     width: calc(100% - .25rem);
     transition: all var(--transition-short);
@@ -350,12 +354,12 @@ input[name="direccion"],
 select[name="zonaDeEntrega"].visible-delivery,
 input[name="direccion"].visible-delivery {
     opacity: 1;
-    max-height: 28px;
+    max-height: 1.75rem;
     height: unset;
     visibility: visible ;
     padding: var(--space-xs) var(--space-sm);
     border-left: var(--border-base) var(--border-solid) var(--pink-body-bg);
-    outline: 2px solid var(--pink-body-bg);
+    outline: var(--border-base) var(--border-solid) var(--pink-body-bg);
     background: var(--white);
     width: calc(100% - .25rem) ;
     margin: var(--margin-2sm) var(--margin-0);
@@ -531,51 +535,51 @@ input[name="direccion"].visible-delivery {
 }
 
 /* Feedback visual */
-.feedback {
+.feedback{
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: var(--space-m) var(--space-xl);
     border-radius: var(--radius-xs);
     font-size: var(--fs-base);
-    z-index: 1000;
+    z-index: var(--z-tooltip);
     opacity: 0;
     animation: feedbackFade 3s ease;
-  }
+}
   
-  @keyframes feedbackFade {
+@keyframes feedbackFade{
     0% { opacity: 0; transform: translateY(100%); }
     15% { opacity: 1; transform: translateY(0); }
     85% { opacity: 1; transform: translateY(0); }
     100% { opacity: 0; transform: translateY(100%); }
-  }
+}
   
-  .feedback--success {
+.feedback--success{
     background: var(--green-light);
     color: var(--white);
-  }
+}
   
-  .feedback--error {
+.feedback--error{
     background: var(--red-hot);
     color: var(--white);
-  }
+}
   
-  .feedback--warning {
+.feedback--warning{
     background: var(--oranje-light);
     color: var(--white);
-  }
+}
   
   /* Controles de cantidad */
-  .product-item__controls {
+.product-item__controls{
     display: flex;
     align-items: center;
-  }
+}
   
-  .product-item__quantity {
+.product-item__quantity{
     min-width: 24px;
     text-align: center;
     font-weight: var(--fw-bolder);
-  }
+}
 
   /* Estados de vacío/error */
 .empty-state {

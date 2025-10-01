@@ -5,7 +5,7 @@ export class ProductCard {
     this.cartManager = cartManager;
     this.quantityElement = null;
   }
-
+// conseguir imagen placeholder.webp Ln17, Col 11
   render() {
     const card = document.createElement('article');
     card.className = 'product-item__card';

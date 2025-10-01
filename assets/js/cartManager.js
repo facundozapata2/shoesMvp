@@ -4,7 +4,8 @@
 export class CartManager {
   constructor() {
     this.carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    this.MAX_ITEMS = 100; // Límite máximo por producto
+    // Temporal el Infinity
+    this.MAX_ITEMS = Infinity; // Límite máximo por producto
   }
 
   // Añadir producto al carrito
@@ -13,6 +14,7 @@ export class CartManager {
     
     try {
       if (itemExistente) {
+        // siempre va a dar false 
         if (itemExistente.cantidad >= this.MAX_ITEMS) {
           throw new Error(`Límite de ${this.MAX_ITEMS} unidades por producto`);
         }
@@ -53,6 +55,7 @@ export class CartManager {
   }
 
   // Eliminar todas las unidades de un producto
+  // falta GUI
   eliminarTodo(productoId) {
     const initialLength = this.carrito.length;
     this.carrito = this.carrito.filter(item => item.id !== productoId);
