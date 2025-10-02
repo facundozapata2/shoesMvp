@@ -10,7 +10,7 @@ export class ProductCard {
     const card = document.createElement('article');
     card.className = 'product-item__card';
     card.innerHTML = `
-      <img src="./assets/images/webp/products/${this.product.image}" 
+      <img src="./assets/images/avif/products/${this.product.image}" 
            alt="${this.product.alt}"
            class="product-item__image"
            loading="lazy"

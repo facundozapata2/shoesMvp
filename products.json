@@ -5,7 +5,7 @@
     "name": "AirPods 2da generación",
     "price": 22000,
     "description": "Auriculares true wireless con estuche de carga y gran autonomía.",
-    "image": "airdPods2DaGeneracion9.37.png",
+    "image": "airdPods2DaGeneracion9.37.avif",
     "alt": "AirPod segunda generacion"
   },
   {
@@ -14,7 +14,7 @@
     "name": "Auricualres Xioami TWS",
     "price": 14999,
     "description": "Auriculares inalámbricos con estuche de carga, prácticos para todo el día.",
-    "image": "auricualresXioamiTWS3.52.png",
+    "image": "auricualresXioamiTWS3.52.avif",
     "alt": "headphones xiaomi inalambricos con estuche de carga (wireless headphnes)"
   },
   {
@@ -23,7 +23,7 @@
     "name": "Auriculares JBL V7 AAA+",
     "price": 35000,
     "description": "Auriculares inalámbricos JBL de tipo casco",
-    "image": "aurisJBLV4aaa+10.42NOBG.png",
+    "image": "aurisJBLV4aaa+10.42NOBG.avif",
     "alt": "Auriculares inalámbricos JBL de tipo casco"
   },
   {
@@ -32,7 +32,7 @@
     "name": "Bateria portatil Iphone",
     "price": 15000,
     "description": "Power bank compacto y práctico para recargar donde estés.",
-    "image": "bateriaPortatilphone9.26.png",
+    "image": "bateriaPortatilphone9.26.avif",
     "alt": "banco de poder (power bank)"
   },
   {
@@ -41,7 +41,7 @@
     "name": "Cargador 20 W + Cable Lightning",
     "price": 9999,
     "description": "Set para carga rápida y transferencia de datos.",
-    "image": "cargador20wCableLightning3.22NOBG.png",
+    "image": "cargador20wCableLightning3.22NOBG.avif",
     "alt": "set de cargar rapida y tranferencia de datos"
   },
   {
@@ -50,7 +50,7 @@
     "name": " Smartwatch + Auricular BT",
     "price": 19999,
     "description": "Smartwatch con auricular Bluetooth para uso diario + 7 mallas.",
-    "image": "comboRelojAuricularBt13.56NOBG.png",
+    "image": "comboRelojAuricularBt13.56NOBG.avif",
     "alt": "smartwatch con auricular bluetooth mas siete mallas intercambiables entre si"
   },
   {
@@ -59,7 +59,7 @@
     "name": "GO 4 (AAA+)",
     "price": 23999,
     "description": "Parlante JBL GO4 Certificado.",
-    "image": "Go4AAA+11.36NOBG.png",
+    "image": "Go4AAA+11.36NOBG.avif",
     "alt": "parlante JBL G04"
   },
   {
@@ -68,7 +68,7 @@
     "name": "TV Box",
     "price": 32000,
     "description": "JBL Go 3 ofrece un sonido natural, con una gran claridad y precisión",
-    "image": "tvBox.png",
+    "image": "tvBox.avif",
     "alt": "tv box"
   }
 ]
